@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: rgb(204, 199, 199);
+  height: 100vh;
+  width: 100%;
+  padding: 15px;
+  gap: 15px;
+  display: grid;
+  grid-template-columns: 80px repeat(12, 1fr);
+  grid-template-rows: 2fr 1fr 2fr 3fr;
+}
+.sidebar {
+  background-color: lightblue;
+  grid-row: 1/-1;
+}
+.header {
+  background-color: aqua;
+  grid-column: 2/-1;
+}
+.start-one {
+  background-color: yellow;
+  grid-column: 2/5;
+}
+.start-two {
+  background-color: green;
+  grid-column: 5/8;
+}
+.start-three {
+  background-color: yellowgreen;
+  grid-column: 8/11;
+}
+.start-four {
+  background-color: greenyellow;
+  grid-column: 11/14;
+}
+.chart-one {
+  background-color: rgb(18, 227, 18);
+  grid-column: 2/10;
+}
+.chart-two {
+  background-color: rgb(7, 16, 7);
+  grid-column: 10/14;
+}
+.overview {
+  background-color: rgb(237, 18, 7);
+  grid-column: 2/12;
+}
+.reminder {
+  background-color: rgb(18, 18, 227);
+  grid-column: 12/14;
+}
